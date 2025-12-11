@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 notes = [8, 10, 11, 12, 13, 13, 14, 15, 17, 18, 20, 21, 25]
 notes.sort()
 
@@ -26,4 +28,13 @@ else:
     Q1 = calcMed(0, mid - 1)  # bas : 0 .. mid-1
     Q3 = calcMed(mid, n - 1)  # haut : mid .. n-1
 
-print("Q1 =", Q1, "Q2 =", Q2, "Q3 =", Q3)
+IQR = Q3 - Q1
+
+bornesLow = Q1 - (1.5 * IQR)
+bornesHigh = Q3 + (1.5 * IQR)
+
+plt.boxplot(notes, vert=True, showmeans=True)
+
+plt.show()
+
+print("Done")
