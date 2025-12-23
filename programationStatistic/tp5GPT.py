@@ -28,6 +28,8 @@ else:
     Q1 = calcMed(0, mid - 1)  # bas : 0 .. mid-1
     Q3 = calcMed(mid, n - 1)  # haut : mid .. n-1
 
+print("Q1 =", Q1, "Q2 =", Q2, "Q3 =", Q3)
+
 IQR = Q3 - Q1
 
 bornesLow = Q1 - (1.5 * IQR)
