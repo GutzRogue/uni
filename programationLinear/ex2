@@ -1,0 +1,61 @@
+On tire une carte dans un jeu de 52 cartes.
+
+Omega = {...}
+
+
+As = {A,A,A,A}
+
+
+P(As) = As / Omega = 4/52 = 2/26 = 1/13
+
+Rouge {...} 
+
+P(Rouge) = Rouge / Omega = 26/52 = 1/2
+
+P(As Rouge)
+
+A∩B = {...}
+
+P(A∩B) = P(As) * P(Rouge) = 1/26
+
+“As” et “Rouge” sont-ils compatibles ?
+
+A∩B != ∅
+
+----------------------------------------------------------------------------
+
+Un sac contient 6 rouges et 4 bleues (10 total). On tire une boule.
+
+-- P(A∣B) = P(A∩B) / P(B)
+
+-- P(A∩B) = P(A∣B) * P(B)
+
+
+Omega = {...}
+
+Rouge = {...}
+
+Bleu = {...}
+
+P(Rouge1) = 6/10
+
+Omega = 9
+
+P(Bleu2 | Rouge1) = 4/9
+
+
+P(Rouge1∩Bleu2)  = 4/9 * 6/10 = 24 / 90
+
+
+P(Rouge1) = 6/10
+
+Omega = 9
+
+P(Rouge2 | Rouge1) = 5/9
+
+P(Rouge2 ∩ Rouge1) = 5/9 * 6/10 = 30/90 = 1/3
+
+
+
+
+
